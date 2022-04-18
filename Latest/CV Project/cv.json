@@ -1,0 +1,21 @@
+POST <webservice>/Login HTTP/1.1
+
+Host: <host name>
+
+Accept: {application/xml | application/json}
+
+Content-type: application/json
+
+{
+
+  "domain":"DOMAIN",
+
+  "username":"USER",
+
+  "password":"PASSWORD",
+
+  "commserver":"COMMSERVE"
+
+  "timeout":"300000"
+
+}
