@@ -41,7 +41,7 @@ else:
 diff_percent = round((difference / float(yesterdays_closing_price)) * 100)
 print(diff_percent)
 
-if diff_percent > 5:
+if diff_percent > 1:
     print("Get News")
 
 if abs(diff_percent) > 1:
