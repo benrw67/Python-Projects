@@ -1,0 +1,16 @@
+Sheety:
+
+Authorization: Bearer goingoneholidayw00w00
+
+Sheety Put Endpoint: https://api.sheety.co/ffe13bf6e799248d3e25498f46d8bdde/flightDeals/prices/[Object ID]
+
+Sheety Get: https://api.sheety.co/ffe13bf6e799248d3e25498f46d8bdde/flightDeals/prices
+
+Sheety POsT: https://api.sheety.co/ffe13bf6e799248d3e25498f46d8bdde/flightDeals/prices
+
+Tequila Flight Tracker: https://tequila-api.kiwi.com/
+
+Tequila Flight Tracker API key: AOuLwHb0S5EICLLmlg50mjrsVdxJgUak
+
+
+
