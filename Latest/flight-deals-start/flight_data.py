@@ -1,26 +1,15 @@
-from datetime import datetime,timedelta
 TEQUILA_ENDPOINT = "https://tequila-api.kiwi.com/v2/search"
 TEQUILA_API = {"apikey": "AOuLwHb0S5EICLLmlg50mjrsVdxJgUak"}
 
 class FlightData:
-    def get_flight_price(self, iata_code):
-        tomorrows_date = datetime.now().strftime("%d/%m/%Y") + timedelta(days = 1)
-        up_to = datetime.now().strftime("%d/%m/%Y") + timedelta(months = 6)
+    def __init__(self, price, origin_city, origin_airport, destination_city, destination_airport, out_date, return_date):
+        self.price = price
+        self.origin_city = origin_city
+        self.origin_airport = origin_airport
+        self.destination_city = destination_city
+        self.destination_airport = destination_airport
+        self.out_date = out_date
+        self.return_date = return_date
 
-        params = {
-            "fly_from": "LON",
-            "fly_to": iata_code,
-            "date_from": tomorrows_date,
-            "date_to": up_to,
-            "nights_in_dst_from": 7,
-            "nights_in_dst_to": 28,
-            "flight_type": "round",
-            "curr": "GBP",
-            "max_stopovers": 0
-        }
-
-        response = requests.get(url=TEQUILA_ENDPOINT, params=params, headers=TEQUILA_API)
-        results = response.json()
-        return results
 
 
